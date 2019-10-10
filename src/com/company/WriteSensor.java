@@ -36,8 +36,10 @@ public class WriteSensor extends  WriteFile{
      * @param Objects list of object to be added in the file.
      *
      */
+
     public void WriteFile(Object Object)
     {
+        System.out.println("writing file");
         this.Object = Object;
         WriteClassDeclaration();
         WriteOpeningBracket();

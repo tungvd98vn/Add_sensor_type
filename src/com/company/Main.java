@@ -17,7 +17,7 @@ public class Main {
         o.addProperties("private static final double LOW_THRESHOLD = 30;");
         o.addProperties("private static final double HIGH_THRESHOLD = 50;");
 
-        WriteSensor ws = new WriteSensor(o.getName());
+        WriteSensor ws = new WriteSensor(o.getName(),"");
         ws.CreateFile();
         ws.WriteFile(o);
 

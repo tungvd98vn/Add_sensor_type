@@ -47,16 +47,18 @@ public class WriteFile {
      *        ERROR_FILE_CREATE if file creation generates exception.
      */
     protected int CreateFile() {
+        // not working yet. sth has to do with MANIFEST file
         try {
             if(file.exists())
                 return ERROR_FILE_EXIST;
             file.createNewFile();
 
+            System.out.println("createFile OK");
             return SUCCESS_FILE_CREATE;
         }
         catch(Exception e) {
-
-            System.out.print(e.toString());
+            System.out.println("createFile NOT OK");
+            System.out.println(e.toString());
             return ERROR_FILE_CREATE;
         }
     }
