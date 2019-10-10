@@ -48,6 +48,7 @@ public class WriteFile {
      */
     protected int CreateFile() {
         // not working yet. sth has to do with MANIFEST file
+        // java.io.IOException: Permission denied
         try {
             if(file.exists())
                 return ERROR_FILE_EXIST;
