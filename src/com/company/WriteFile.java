@@ -185,6 +185,5 @@ public class WriteFile {
 
     public StringBuffer GetTextAreaText() {
         return TextAreaBuffer;
-        //
     }
 }
